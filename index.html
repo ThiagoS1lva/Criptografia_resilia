@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/design.css">
+    <link rel="shortcut icon" href="imgs/criptografia.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Cifra de Cesar e Base64</title>
+</head>
+
+<body>
+    <main class="main container">
+        <header class="cabeçalho">
+            <img src="imgs/trancar.png" alt="Trancar">
+            <h1>CIFRA DE CESAR E BASE64</h1>
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="DIGITE A MENSAGEM AQUI!"></textarea>
+            </div>
+            <img id="transfer" src="imgs/transfer.png" alt="">
+            <div id="output">
+                <img src="imgs/criptografia.png" alt="criptografia?">
+                <h2>Sua mensagem criptografada!</h2>
+                <span>Digite um texto que deseja criptografar ou descriptografar</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-btn">
+                <div class="btn_area">
+                    <button class="menos_btn">-</button>
+                    <div class="numero_btn">1</div>
+                    <button class="mais_btn">+</button>
+                </div>
+                <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://www.instagram.com/diskthi/" target="_blank">
+                <img src="imgs/insta.png" alt="Logo instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/thiago-oliveira-49952823a/" target="_blank">
+                <img src="imgs/linkedin.png" alt="Logo linkedin">
+            </a>
+            <a href="https://www.facebook.com/Diskthiago" target="_blank">
+                <img src="imgs/fc.png" alt="Logo Facebook">
+            </a>
+            <a href="https://github.com/ThiagoS1lva" target="_blank">
+                <img src="imgs/logotipo-do-github.png" alt="Logo github">
+            </a>
+        </div>
+        <h3>Desenvolvido por Thiago Oliveira</h3>
+    </footer>
+
+    <script src="interações/scripts.js"></script>
+</body>
+
+</html>

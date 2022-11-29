@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    background: rgb(119, 212, 208);
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.cabeçalho h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabeçalho img{
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+#transfer{
+    width: 600px;
+    height: 400px;
+}
+
+.container-input .input{
+    width: 400px;
+    height: 330px;
+}
+
+#input-texto{
+    width: 445px;
+    height: 330px;
+    font-size: 20px;
+    color: rgb(0, 82, 78);
+    background: rgb(162, 248, 244);
+    box-shadow: none;
+    border-color: rgb(162, 248, 244);
+    border-radius: 10px;
+    outline: 0;
+    padding: 10px;
+    text-transform: bold;
+}
+
+#teste {
+    width: 445px;
+    height: 330px;
+    font-size: 20px;
+    color: rgb(0, 82, 78);
+    background: rgb(162, 248, 244);
+    box-shadow: none;
+    border-color: rgb(162, 248, 244);
+    border-radius: 10px;
+    outline: 0;
+    padding: 10px;
+    text-transform: bold;   
+}
+
+
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(162, 248, 244);
+    background-color: rgb(162, 248, 244);
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+    margin-right: 3%;
+}
+#output h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 82, 78);
+}
+#output span {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;  
+}
+#output img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 17%;
+    opacity: 0.4;
+}
+.container-btn {
+    display: flex;
+}
+
+
+.container-btn button{
+    border: 2px solid rgb(0, 82, 78);   
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 141, 134); 
+    width: auto;
+    height: 50px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .2s;
+}
+.container-btn button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 82, 78);
+    top: -4px;
+}
+
+#btn-copiar{
+    border: 2px solid rgb(0, 82, 78);   
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 141, 134); 
+    width: auto;
+    height: 50px;
+    margin: 10%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .2s;
+}
+#btn-copiar:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 82, 78);
+    top: -4px;
+}
+.btn_area {
+    display: flex;
+    background-color: rgb(193, 248, 248);
+    border-radius: 10px;
+    height: 30px;
+}
+.btn_area button{
+    font-size: 17px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0 10px;
+    height: 40px;
+    top: -4px;
+}
+
+
+
+
+.numero_btn {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px;
+    color:#000;
+}
+
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 14vh;
+    background: rgb(0, 82, 78);;
+}
+.rodape h3 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.icons img {
+   width: 100px;
+   height: 100px;
+   padding-right: 20px;  
+   transition: all ease-in-out .2s;
+}
+.icons img:hover{
+    filter:invert(1);
+}
