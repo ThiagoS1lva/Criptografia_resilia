@@ -33,8 +33,8 @@ body {
     padding: 2% 0 0 4%;
 }
 #transfer{
-    width: 600px;
-    height: 400px;
+    width: 20%;
+    height: 20%;
 }
 
 .container-input .input{
@@ -69,7 +69,6 @@ body {
     padding: 10px;
     text-transform: bold;   
 }
-
 
 
 #output{
@@ -151,13 +150,19 @@ body {
 #btn-copiar:hover{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 82, 78);
-    top: -4px;
+    top: -4px; 
 }
+.selected {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 82, 78);     
+}
+
 .btn_area {
     display: flex;
     background-color: rgb(193, 248, 248);
     border-radius: 10px;
     height: 30px;
+    margin-left: 40px;
 }
 .btn_area button{
     font-size: 17px;
@@ -168,9 +173,6 @@ body {
     top: -4px;
 }
 
-
-
-
 .numero_btn {
     line-height: 30px;
     font-size: 20px;
@@ -179,14 +181,16 @@ body {
     color:#000;
 }
 
-
 .rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2%;
     margin-top: 14vh;
-    background: rgb(0, 82, 78);;
+    background: rgb(0, 82, 78);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 .rodape h3 {
     font-size: 25px;
