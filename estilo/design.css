@@ -8,6 +8,7 @@
 }
 body {
     background: rgb(119, 212, 208);
+    
 }
 
 .cabeçalho {
@@ -18,6 +19,7 @@ body {
 .cabeçalho h1{
     color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
+    font-size: 40px;
 }
 
 .cabeçalho img{
@@ -25,6 +27,18 @@ body {
     max-height: 80px;
     width: auto;
     height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        display: flex;
+    }
+    .container-input {
+        flex-direction: column;
+    }
+    #transfer {
+        display: none;
+    }
 }
 
 .container-input {
@@ -78,7 +92,7 @@ body {
     background-color: rgb(162, 248, 244);
     border-radius: 10px;
     width: 450px;
-    height: 400px;
+    height: auto;
     margin-right: 3%;
 }
 #output h2 {
@@ -107,7 +121,7 @@ body {
 }
 
 
-.container-btn button{
+.cifraCesar{
     border: 2px solid rgb(0, 82, 78);   
     border-radius: 10px;
     text-transform: uppercase;
@@ -125,13 +139,12 @@ body {
     font-family: 'Roboto', sans-serif;
     transition: all ease-in-out .2s;
 }
-.container-btn button:hover {
+.cifraCesar:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 82, 78);
     top: -4px;
 }
-
-#btn-copiar{
+.base64{
     border: 2px solid rgb(0, 82, 78);   
     border-radius: 10px;
     text-transform: uppercase;
@@ -142,20 +155,135 @@ body {
     background: rgb(0, 141, 134); 
     width: auto;
     height: 50px;
-    margin: 10%;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 2%;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     transition: all ease-in-out .2s;
 }
-#btn-copiar:hover{
+.base64:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 82, 78);
-    top: -4px; 
+    top: -4px;
 }
+
 .selected {
+    border: 2px solid rgb(0, 82, 78);   
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 82, 78);     
+    color: rgb(0, 82, 78); 
+    width: auto;
+    height: 50px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .2s;    
 }
+
+
+.descriptografar{
+    border: 2px solid rgb(0, 82, 78);   
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 141, 134); 
+    width: auto;
+    height: 50px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .2s;
+}
+.descriptografar:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 82, 78);
+    top: -4px;
+}
+
+.criptografar{
+    border: 2px solid rgb(0, 82, 78);   
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 141, 134); 
+    width: auto;
+    height: 50px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .2s;
+}
+.criptografar:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 82, 78);
+    top: -4px;
+}
+
+.mais_btn{
+    border: 2px solid rgb(0, 82, 78);   
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 141, 134); 
+    width: auto;
+    height: 50px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .2s;
+}
+.mais_btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 82, 78);
+    top: -4px;
+}
+
+.menos_btn{
+    border: 2px solid rgb(0, 82, 78);   
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 141, 134); 
+    width: auto;
+    height: 50px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all ease-in-out .2s;
+}
+.menos_btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 82, 78);
+    top: -4px;
+}
+
 
 .btn_area {
     display: flex;
