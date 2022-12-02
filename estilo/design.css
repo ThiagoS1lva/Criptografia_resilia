@@ -29,22 +29,14 @@ body {
     height: auto;
 }
 
-@media only screen and (max-width: 800px) {
-    body {
-        display: flex;
-    }
-    .container-input {
-        flex-direction: column;
-    }
-    #transfer {
-        display: none;
-    }
-}
-
 .container-input {
     display: flex;
     justify-content: space-between;
     padding: 2% 0 0 4%;
+    max-height: 40vh;
+}
+textarea {
+    max-height: 40vh;
 }
 #transfer{
     width: 20%;
@@ -53,7 +45,6 @@ body {
 
 .container-input .input{
     width: 400px;
-    height: 330px;
 }
 
 #input-texto{
@@ -108,16 +99,17 @@ body {
     text-align: center;  
 }
 #output img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 150px;
+    max-height: 150px;
     width: auto;
     height: auto;
     margin-top: 4%;
-    margin-left: 17%;
+    margin-left: 35%;
     opacity: 0.4;
 }
 .container-btn {
     display: flex;
+    padding-top: 20px;
 }
 
 
@@ -313,20 +305,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
+    padding-top: 5px;
     margin-top: 14vh;
     background: rgb(0, 82, 78);
     bottom: 0;
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    width: 100vw;
 }
 .rodape h3 {
-    font-size: 25px;
+    font-size: 17px;
     color: rgb(255, 255, 255);
 }
 .icons img {
-   width: 100px;
-   height: 100px;
+   width: 50px;
+   height: 50px;
    padding-right: 20px;  
    transition: all ease-in-out .2s;
 }
